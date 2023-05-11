@@ -8,7 +8,8 @@ int main(){
     std::cin >> size >> order >> limit;
     
     graph* exampleGraph = new graph();
-
+    
     exampleGraph->generate_graph(seed, size, order, limit);
     exampleGraph->print_graph();
+    free(exampleGraph);
 }

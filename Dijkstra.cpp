@@ -18,6 +18,9 @@ int main(){
     
     catch(std::invalid_argument &e){
         std::cerr << e.what() << std::endl;
+        free(exampleGraph);
         return -1;
     }
+    free(exampleGraph);
+    return 0;
 }
