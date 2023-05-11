@@ -2,7 +2,8 @@
 #include <iostream>
 #include <cstring>
 #include <climits>
-#define MAXSIZE 10000
+
+const int MAXSIZE = 1e4;
 
 class graph{
     public: 
@@ -30,7 +31,7 @@ class graph{
                 for(int j = 0; j < this->order; j++){
                     std::cout << adj_matrix[i][j] << " ";
                 }
-                std::cout << "\n";
+                std::cout << std::endl;
             }
             
         }
