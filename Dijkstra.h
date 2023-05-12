@@ -1,7 +1,8 @@
 #include "graph.h"
 #include <queue>
-#define MAXSIZE 10000
-#define inf 1e9 + 7
+
+constexpr int inf = 1e9 + 7;
+constexpr int MAXSIZE = 1e4;
 
 void find_shortest_path(int src, graph* g){
     if(src >= g->order){

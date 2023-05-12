@@ -6,9 +6,7 @@ int main(){
     int size, order, limit;
     std::cin >> seed;
     std::cin >> size >> order >> limit;
-    graph* exampleGraph = new graph();
-    exampleGraph->generate_graph(seed, size, order, limit);
-    exampleGraph->print_graph();
+    graph* exampleGraph = new graph(seed, size, order, limit);
     int src;
     std::cin >> src;
     
